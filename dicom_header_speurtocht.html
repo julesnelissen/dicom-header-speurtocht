@@ -127,7 +127,7 @@ const QUIZ = [
   errfb:"Zoek (0008,0016) in Object 1. Tip: zoek de UID daarna op via dicom.innolitics.com."},
  {q:"5. Hoeveel v&eacute;rschillende SOP Classes bevat deze ene studie?", type:"mc",
   opts:["4","6","8","10"], a:2,
-  okfb:"Ja, acht: CT, Enhanced CT, SEG, SR, GSPS, Key Object Selection, Secondary Capture en Radiation Dose SR &mdash; &eacute;&eacute;n onderzoek is veel meer dan alleen beelden. Let op: Object 4 en 8 hebben be&iacute;de Modality SR, maar een verschillende SOP Class.",
+  okfb:"Ja, acht: CT, Enhanced CT, SEG, SR, GSPS, Key Object Selection, Secondary Capture en Radiation Dose SR &mdash; &eacute;&eacute;n onderzoek is veel meer dan alleen beelden. Let op: Modality en SOP Class zijn niet hetzelfde &mdash; Object 1 en 2 hebben be&iacute;de Modality CT, en Object 4 en 8 be&iacute;de Modality SR, maar telkens een verschillende SOP Class. De SOP Class bepaalt w&aacute;t het object is; Modality zegt waar het vandaan komt.",
   errfb:"Vergelijk (0008,0016) over alle acht objecten."},
  {q:"6. Zoek (0028,0010) Rows &eacute;n (0028,0011) Columns in Object 1. Wat is de matrix?", type:"mc",
   opts:["256 &times; 256","256 &times; 512","512 &times; 512","512 &times; 1024"], a:0,
