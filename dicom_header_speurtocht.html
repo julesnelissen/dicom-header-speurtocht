@@ -110,7 +110,7 @@ function filterTags(k,q){
 const QUIZ = [
  {q:"1. Wat is de waarde van (0010,0010) Patient's Name?", hint:"Zelfde in alle vier de objecten.",
   type:"text", check:v=>{v=v.toUpperCase();return v.includes("SPEURTOCHT")&&v.includes("DEMO");},
-  okfb:"Klopt: SPEURTOCHT^DEMO. Het ^ scheidt achternaam en voornaam (VR = PN).",
+  okfb:"Klopt: SPEURTOCHT^DEMO. Het ^ scheidt achternaam en voornaam (voor meer info zie section 6.2 van DICOM standaard Value Representation (VR). VR = PN. <a href="sect 6.2">https://dicom.nema.org/dicom/2013/output/chtml/part05/sect_6.2.html</a>",
   errfb:"Kijk bij tag (0010,0010) — vorm: ACHTERNAAM^VOORNAAM."},
  {q:"2. Welke Modality (0008,0060) heeft Object 2?", type:"mc",
   opts:["CT","SEG","SR","OT"], a:1,
